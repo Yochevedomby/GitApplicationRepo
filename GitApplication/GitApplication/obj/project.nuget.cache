@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "oYRlMlcwHJTRGjx2CU8uez1/JR6rq6G5hbsAjAKz/iZa4hkA1M5kmBVqxbbiNVstvjUpJND0O3hFebzHF42udQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\chevi\\Documents\\Applications\\GitApplication\\GitApplication\\GitApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chevi\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
+    "C:\\Users\\chevi\\.nuget\\packages\\microsoft.bcl.timeprovider\\8.0.1\\microsoft.bcl.timeprovider.8.0.1.nupkg.sha512",
+    "C:\\Users\\chevi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\chevi\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.2.0\\microsoft.identitymodel.abstractions.8.2.0.nupkg.sha512",
+    "C:\\Users\\chevi\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.2.0\\microsoft.identitymodel.jsonwebtokens.8.2.0.nupkg.sha512",
+    "C:\\Users\\chevi\\.nuget\\packages\\microsoft.identitymodel.logging\\8.2.0\\microsoft.identitymodel.logging.8.2.0.nupkg.sha512",
+    "C:\\Users\\chevi\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.2.0\\microsoft.identitymodel.tokens.8.2.0.nupkg.sha512",
+    "C:\\Users\\chevi\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\chevi\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\chevi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\chevi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\chevi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "C:\\Users\\chevi\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.2.0\\system.identitymodel.tokens.jwt.8.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
