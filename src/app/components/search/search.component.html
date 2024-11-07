@@ -1,0 +1,27 @@
+<nav class="navbar">  
+    <!-- <div class="user-info" *ngIf="currentUser">
+        <span>Welcome, {{ currentUser.username }}</span> 
+        <button (click)="logout()">Logout</button>
+      </div> -->
+    <button (click)="openLoginModal()" class="login-button">Login</button>
+  </nav>
+  <app-login *ngIf="isLoginModalOpen" (close)="closeLoginModal()"></app-login>
+<h1 class="title">GITHUB</h1>
+
+
+<div class="search-container">
+    <button (click)="goToBookmarks()">הסימניות שלי</button>
+    <button (click)="search()">חיפוש</button>
+    <input [(ngModel)]="query" placeholder="הקלד מילת חיפוש" (keyup.enter)="search()" />
+</div>
+<app-repository-list [repositories]="repositories" 
+></app-repository-list>
+<!-- (bookmarkRepository)="bookmark($event)" -->
+    <!-- <div class="results-container">
+        <div *ngFor="let repo of repositories" class="repo-item">
+            <h3>{{ repo.name }}</h3>
+            <img [src]="repo.owner.avatar_url" alt="Owner Avatar" width="50" />
+
+            <button (click)="bookmark(repo)">שמור במועדפים</button>
+        </div>
+    </div> -->

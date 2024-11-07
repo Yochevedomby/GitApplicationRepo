@@ -1,0 +1,34 @@
+
+<!-- <div class="login-modal">
+    <div class="login-form">
+      <label for="username">Username:</label>
+      <input id="username" [(ngModel)]="username" placeholder="Enter username" type="text">
+  
+      <label for="password">Password:</label>
+      <input id="password" [(ngModel)]="password" placeholder="Enter password" type="password">
+  
+      <button (click)="onLogin()">Login</button>
+      <button (click)="close.emit()">Close</button>
+    </div>
+  </div> -->
+
+  <div class="login-modal">
+    <div class="login-form">
+      <!-- כפתור X סגירה -->
+      <span class="close-modal" (click)="closeLoginModal()">X</span>
+      
+      <h2 class="login-header">LOGIN</h2>
+  
+      <form (ngSubmit)="onLogin()">
+        <label for="username">Username</label>
+        <input id="username" type="text" [(ngModel)]="username" name="username" required />
+  
+        <label for="password">Password</label>
+        <input id="password" type="password" [(ngModel)]="password" name="password" required />
+   <!-- הודעת שגיאה אם יש -->
+   <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  

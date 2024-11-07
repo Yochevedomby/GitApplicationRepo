@@ -1,0 +1,23 @@
+
+
+<div *ngIf="bookmarks.length > 0">
+    <h2>סימניות שנשמרו</h2>
+    <div *ngFor="let bookmark of bookmarks" class="repo-item">
+
+        <div class="repo-info">
+            <a [href]="bookmark.owner.html_url" target="_blank" rel="noopener noreferrer">
+                <img [src]="bookmark.owner.avatar_url" width="50" />
+                <div class="repo-details">
+                    <h3>{{ bookmark.name }}</h3>
+                    <h3>{{ bookmark.owner.login }}</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+</div>
+<div *ngIf="bookmarks.length === 0" class="bookmark-empty">
+    <p>לא נוספו מועדפים עדיין.</p>
+</div>

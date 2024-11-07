@@ -1,0 +1,24 @@
+<div class="repository-list">
+    <div *ngFor="let repo of repositories" class="repo-item">
+        <div class="repo-info">
+            <a [href]="repo.owner.html_url" target="_blank" rel="noopener noreferrer">
+                <img [src]="repo.owner.avatar_url" alt="Owner Avatar" class="avatar" />
+
+                <div class="repo-details">
+                    <h3>{{ repo.name }}</h3>
+                    <h3>{{ repo.owner.login }}</h3>
+                </div>
+            </a>
+        </div>
+
+        <!-- כפתור מועדפים -->
+        <!-- <button class="bookmark-button" (click)="onBookmark(repo)" (click)="toggleBookmark(repo)">
+            <i class="bi" [ngClass]="repo.isBookmarked ? 'bi-star-fill' : 'bi-star'"></i>
+            <i class="bi bi-star"></i>
+        </button> -->
+
+        <button (click)="toggleBookmark(repo)" class="add-to-collection-btn" [ngClass]="{'added': repo.isBookmarked}">
+            {{ repo.isBookmarked ? 'V' : 'X' }}
+        </button>
+    </div>
+</div>

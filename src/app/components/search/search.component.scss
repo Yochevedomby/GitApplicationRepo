@@ -1,0 +1,131 @@
+/* src/app/features/search/search.component.scss */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    //border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  
+    input {
+      flex: 1;
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+      transition: border-color 0.3s ease;
+  
+      &:focus {
+        border-color: #007bff;
+      }
+    }
+  
+    input::placeholder {
+        text-align: right; 
+        direction: rtl;    
+      }
+
+    button {
+      padding: 8px 12px;
+      font-size: 14px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  
+  .results-container {
+    margin-top: 20px;
+  
+    .repo-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px;
+      border-bottom: 1px solid #e0e0e0;
+  
+      h3 {
+        margin: 0;
+        font-size: 16px;
+      }
+  
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+  
+      button {
+        padding: 4px 8px;
+        font-size: 12px;
+        color: #007bff;
+        background-color: transparent;
+        border: 1px solid #007bff;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #007bff;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+
+.title {
+    font-size: 5rem; 
+    font-weight: 800; 
+    color:crimson;
+    text-align: center; 
+    margin-bottom: 1rem; 
+  
+
+  }
+  
+  // nav styles for the login button
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #2c3e50;
+  }
+  
+  .login-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #2980b9;
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+  .user-info {
+    font-size: 16px;
+  }

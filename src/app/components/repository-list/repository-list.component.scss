@@ -1,0 +1,112 @@
+.repository-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+// .repo-item {
+//     background-color: #f9f9f9;
+//     border-radius: 8px;
+//     overflow: hidden;
+//     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+//     transition: transform 0.3s ease;
+
+//     &:hover {
+//         transform: scale(1.05);
+//     }
+// }
+.repo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+// .repo-info {
+//     display: flex;
+//     padding: 20px;
+// }
+
+.repo-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.repo-details h3 {
+    font-size: 1em;
+    color: #000;
+    margin: 0;
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+.bookmark-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffcc00;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #000
+    }
+  
+    i {
+      font-size: 20px;
+    }
+  }
+
+
+  .add-to-collection-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-collection-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-to-collection-btn.added {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  .add-to-collection-btn.added:hover {
+    background-color:  #0056b3;
+  }

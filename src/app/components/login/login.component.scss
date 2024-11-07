@@ -1,0 +1,116 @@
+/* עיצוב המודל */
+.login-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;  /* רדיוס יותר רך לפינות */
+    padding: 40px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* הצללה מורחבת יותר */
+    width: 450px;  /* הרחב את המודל */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #f3f4f6, #ffffff);  /* הגדרת גרדיינט עם צבעים בהירים */
+    border: 1px solid #ccc;
+  }
+  
+  /* כפתור ה-X בתוך הפופאפ */
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .close-modal:hover {
+    color: #0056b3;
+  }
+  
+  /* כותרת ה-login */
+  .login-header {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;  /* הגדל את הגודל של הכותרת */
+    font-weight: 600;
+    color: #333;  /* צבע כהה לכותרת */
+    letter-spacing: 1px;  /* רווחים בין האותיות */
+  }
+  
+  /* עיצוב הטופס */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* עיצוב התוויות */
+  label {
+    margin-bottom: 8px;
+    font-size: 18px;  /* הגדל את גודל התוויות */
+    color: #444;
+  }
+  
+  /* עיצוב שדות הקלט */
+  input {
+    padding: 15px;  /* הגדל את הרוחב של השדות */
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;  /* הגדל את גודל הגופן בשדות הקלט */
+    background-color: #fafafa;  /* צבע רקע בהיר */
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* כפתור ה-login */
+  button {
+    padding: 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* עיצוב עבור הקשיים בעת המילוי (למשל שדות ריקים) */
+  input:invalid {
+    border-color: #0056b3
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* אפקטים נוספים */
+  .login-modal {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
